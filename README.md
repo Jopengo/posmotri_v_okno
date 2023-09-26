@@ -1,1 +1,1 @@
-git@github.com:Jopengo/ono-tebe-nado.git
+git@github.com:Jopengo/posmotri_v_okno.git
