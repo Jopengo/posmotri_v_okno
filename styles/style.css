@@ -97,7 +97,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 18px; 
+  margin-top: 18px;
 }
 
 .title {
@@ -161,7 +161,7 @@ ol {
   line-height: 70.5px;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
-  
+
 }
 
 .content__accent {
@@ -214,13 +214,13 @@ ol {
   text-underline-offset: 5px;
 }
 
-.content__video-card:active{
+.content__video-card:active {
   text-decoration: none;
 }
 
 .content__video-card-description {
   font-size: 16px;
-  font-family: Arial, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .content__video-card-description-container {
@@ -232,13 +232,8 @@ ol {
   width: fit-content;
 }
 
-.search-form__textfield:focus {
-  outline: none;
-}
-
-.search-form__label:has(:focus-visible){
-  border: 1px solid white;
-  outline-offset: 5px;
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid white;
 }
 
 .search-form__pseudo-checkbox {
@@ -319,7 +314,7 @@ ol {
 }
 
 .search-form__textfield:focus {
-  border: 1px solid white;
+  outline-offset: 2px;
 }
 
 .search-form__checkbox:focus+.search-form__pseudo-checkbox {
@@ -333,10 +328,12 @@ ol {
   overflow: hidden;
   width: 194px;
 }
-.search-form__fieldset{
+
+.search-form__fieldset {
   padding-bottom: 6px;
 }
-.search-form__label-text{
+
+.search-form__label-text {
   margin-right: 10px;
   font-family: 'Fira Sans Condensed', Arial, sans-serif;
 }
@@ -347,4 +344,33 @@ ol {
 
 .content__card-link.content__card-link_current .content__video-card {
   background-color: #545050;
+}
+.more-button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.more-button:hover {
+  text-decoration: underline;
+}
+
+.more-button:focus {
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+.search-form__label-text {
+  cursor: pointer;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before,
+.search-form__label:active .search-form__pseudo-checkbox::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  margin: 1.5px 1.5px;
 }
